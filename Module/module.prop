@@ -1,0 +1,6 @@
+id=WVC
+name=WebView Changer
+version=v7.5
+versionCode=75
+author=Lordify
+description=Change Your WebView Implementation to Mulch, Thorium or Vanadium, Pending on Your Device.
