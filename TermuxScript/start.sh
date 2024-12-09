@@ -35,7 +35,7 @@ echo
 # Download the Latest Version of Module Template
 mkdir -p $WD
 sleep 1
-wget https://git.rp1.hu/Lordify/WebViewChanger/releases/download/7.5/Module.zip
+wget https://github.com/Lordify95/WebViewChanger/releases/latest/download/Module.zip
 sleep 1
 unzip Module.zip -d $WD
 sleep 1
