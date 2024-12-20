@@ -248,6 +248,17 @@ if [ -f $INFO ]; then
   rm -f $INFO
 fi
 
+### Unzip curl
+if [[ "$ARCH" = "arm" ]]; then
+	unzip $MODPATH/bin/curl.zip -d $MODPATH/bin
+elif [[ "$ARCH" = "arm64" ]]; then
+	unzip $MODPATH/bin/curl64.zip -d $MODPATH/bin
+else
+	echo "Unsupported CPU Architecture"
+	exit
+fi
+chmod 0755 $MODPATH/bin/$ARCH/curl
+
 ### Install
 ui_print "- Installing"
 
